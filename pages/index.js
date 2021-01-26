@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import styled from 'styled-components'
 import db from '../db.json'
 import Widget from '../src/components/Widget'
@@ -18,24 +19,33 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   return (
-    <QuizBackground backgroundImage={db.bg}>
-      <QuizContainer>
-        <Widget>
-          <Widget.Header>
-            <h1>Quiz de boardgames</h1>
-          </Widget.Header>
-          <Widget.Content>
-            <p>descrição do quiz</p>
-          </Widget.Content>
-        </Widget>
-        <Widget>
-          <Widget.Content>
-            <p>Quiz de terceiros</p>
-          </Widget.Content>
-        </Widget>
-        <Footer />
-      </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/dimasresende" />
-    </QuizBackground>
+    <>
+      <Head>
+        <meta name="og:title" content={db.title} />
+        <meta name="og:description" content={db.description} />
+        <meta name="og:image" content={db.bg} />
+        <meta name="og:type" content="website" />
+        <meta name="og:url" content="https://vercel.com/dimasresende/aluraquiz-base" />
+      </Head>
+      <QuizBackground backgroundImage={db.bg}>
+        <QuizContainer>
+          <Widget>
+            <Widget.Header>
+              <h1>Quiz de boardgames</h1>
+            </Widget.Header>
+            <Widget.Content>
+              <p>descrição do quiz</p>
+            </Widget.Content>
+          </Widget>
+          <Widget>
+            <Widget.Content>
+              <p>Quiz de terceiros</p>
+            </Widget.Content>
+          </Widget>
+          <Footer />
+        </QuizContainer>
+        <GitHubCorner projectUrl="https://github.com/dimasresende" />
+      </QuizBackground>
+    </>
   )
 }
