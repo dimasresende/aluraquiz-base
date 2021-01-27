@@ -30,10 +30,12 @@ export default function Home() {
               }}
             >
               <Input
+                name="nomeDoUsuario"
                 onChange={(event) => {
                   setName(event.target.value);
                 }}
                 placeholder="Digite seu nome"
+                value={name}
               />
               <button type="submit" disabled={name.length === 0}>
                 JOGAR
