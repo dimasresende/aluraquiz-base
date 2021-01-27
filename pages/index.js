@@ -34,13 +34,13 @@ export default function Home() {
           </Widget.Header>
           <Widget.Content>
             <form
-              onSubmit={function (event) {
+              onSubmit={(event) => {
                 event.preventDefault();
                 router.push(`/quiz?name=${name}`);
               }}
             >
               <input
-                onChange={function (event) {
+                onChange={(event) => {
                   setName(event.target.value);
                 }}
                 placeholder="Digite seu nome"
