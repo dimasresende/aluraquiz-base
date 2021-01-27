@@ -8,6 +8,7 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import Input from '../src/components/Input';
 
 export default function Home() {
   const router = useRouter();
@@ -28,7 +29,7 @@ export default function Home() {
                 router.push(`/quiz?name=${name}`);
               }}
             >
-              <input
+              <Input
                 onChange={(event) => {
                   setName(event.target.value);
                 }}
