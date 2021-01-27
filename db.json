@@ -36,7 +36,9 @@
       "mainBg": "#1c1814",
       "contrastText": "#ffffff",
       "wrong": "#ff5722",
-      "success": "#4caf50"
+      "success": "#4caf50",
+      "disabled": "#333333",
+      "textDisabled": "#bbbbbb"
     },
     "borderRadius": "4px"
   }
