@@ -14,11 +14,13 @@ const InputBase = styled.input`
   margin-bottom: 25px;
 `;
 
-export default function Input({ onChange }) {
+export default function Input({ onChange, placeholder }) {
   return (
     <div>
-      <InputBase onChange={onChange} />
+      <InputBase
+        onChange={onChange}
+        placeholder={placeholder}
+      />
     </div>
-  )
-
+  );
 }
