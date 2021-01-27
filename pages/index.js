@@ -33,19 +33,21 @@ export default function Home() {
             <h1>Quiz de boardgames</h1>
           </Widget.Header>
           <Widget.Content>
-            <form onSubmit={function (event) {
-              event.preventDefault();
-              router.push('/quiz?name=${name}');
-              console.log('Enviando dados pelo React')
-            }}>
+            <form
+              onSubmit={function (event) {
+                event.preventDefault();
+                router.push(`/quiz?name=${name}`);
+              }}
+            >
               <input
-                onChange={ function (event) {
+                onChange={function (event) {
                   setName(event.target.value);
                 }}
                 placeholder="Digite seu nome"
               />
               <button type="submit" disabled={name.length === 0}>
-                Jogar {name}
+                Jogar
+                {name}
               </button>
             </form>
           </Widget.Content>
