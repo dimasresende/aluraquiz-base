@@ -64,6 +64,7 @@ function QuestionWidget({
             const alternativeId = `alternative__${alternativeIndex}`;
             return (
               <Widget.Topic
+                key={alternativeId}
                 as="label"
                 htmlFor={alternativeId}
               >
