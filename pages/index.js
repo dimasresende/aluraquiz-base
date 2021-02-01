@@ -52,7 +52,7 @@ export default function Home() {
                 const [projectName, githubUser] = linkExterno.replace(/\//g, '').replace('https:', '').replace('.vercel.app', '').split('.');
                 return (
                   <li key={linkExterno}>
-                    <Widget.Topic href={linkExterno}>
+                    <Widget.Topic href={`/quiz/${projectName}___${githubUser}`}>
                       {`${githubUser}/${projectName}`}
                     </Widget.Topic>
                   </li>
