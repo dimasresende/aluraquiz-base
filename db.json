@@ -27,7 +27,9 @@
     }
   ],
   "external": [
-    ""
+    "https://aluraquiz-base.renatofrancisco.vercel.app/",
+    "https://cthulhuquiz-imersaoalura.vercel.app/",
+    "https://aluraquiz-simpsons.vercel.app/"
   ],
   "theme": {
     "colors": {
