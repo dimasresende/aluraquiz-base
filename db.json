@@ -28,8 +28,9 @@
   ],
   "external": [
     "https://aluraquiz-base.renatofrancisco.vercel.app/",
-    "https://cthulhuquiz-imersaoalura.vercel.app/",
-    "https://aluraquiz-simpsons.vercel.app/"
+    "https://imersao-react-alura.malufell.vercel.app/",
+    "https://flaquiz.nathyts.vercel.app/",
+    "https://quiz-noticia-verdadeira.biacoelho.vercel.app/"
   ],
   "theme": {
     "colors": {
